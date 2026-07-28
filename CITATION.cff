@@ -49,7 +49,7 @@ authors:
     given-names: Khalid W
   - family-names: Halwani
     given-names: Abdulaziz M
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-07-28"                            # set to your release date
 license:
   - MIT
