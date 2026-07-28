@@ -1,47 +1,60 @@
-libname samp 'C:\Users\Tshih\OneDrive\Private dental clinics analysis in Riyadh\Round 3';
+/*======================================================================
+  Spatial Sampling Framework for Dental Facilities - Riyadh City
+  Stratified random street sampling used to plan the field census.
 
-PROC IMPORT OUT= WORK.one
-            DATAFILE= "C:\Users\Tshih\OneDrive\Private dental clinics analysis in Riyadh\Round 3\Group A Dist.xlsx" 
-            DBMS=CSV REPLACE;
-     GETNAMES=YES;
-     DATAROW=2; 
-RUN;
+  Method: draw a 10% simple random sample (SRS) of streets WITHOUT
+  replacement, STRATIFIED by district, with a fixed seed so the sample
+  is reproducible.
 
-PROC IMPORT OUT= WORK.one 
-            DATAFILE= "C:\Users\Tshih\OneDrive\Private dental clinics analysis in Riyadh\Round 3\Group A Dist.xlsx"
-            DBMS=EXCEL REPLACE;
-     RANGE="Sheet1$";
-     GETNAMES=YES;
-     MIXED=NO;
-     SCANTEXT=YES;
-     USEDATE=YES;
-     SCANTIME=YES;
-RUN;
+  Author:  Talal S. Alshihayb
+  License: MIT (see LICENSE)
 
-proc print data=one;run;
+  INPUT
+    A per-round street list (one row per street) with a district
+    identifier (District_Number) and a street id (id).
+    The per-round working workbooks (e.g. "Group A Dist.xlsx") are not
+    part of the public release; the equivalent published street frame is
+    District_population_street_data_stripped.xlsx, sheets
+    "Random selection of streets" and "Clean deduplicated streets".
 
-/*Sorting the data randomly*/
-data one;
-	set one;
-	call streaminit(100);
-	RNG=rand('Normal',0,1);
-	run;
+  HOW TO RUN
+    Set &indir to the folder holding your input workbook and &infile to
+    its name, then submit.
+======================================================================*/
 
-proc print data=one;run;
+%let indir  = .;                 /* folder containing the input workbook */
+%let infile = Group A Dist.xlsx; /* per-round street list                */
 
-proc sort data=one; by RNG;run;
+libname samp "&indir";
 
-proc print data=one;run;
-
-proc sort data=one; by District_Number;run;
-
-/*Simple random sample without replacement and seed specified*/
-proc surveyselect data=one out=two SAMPrate=0.1
-method=SRS seed=100 stats;
-strata District_Number;
+/* Import the street list (one row per street) */
+proc import out = work.one
+            datafile = "&indir./&infile"
+            dbms = xlsx replace;
+    sheet = "Sheet1";
+    getnames = yes;
 run;
 
-proc sort data=two;by id;run;
+proc print data = work.one (obs = 10); run;
 
-proc print data=two;run;
+/* Randomly shuffle, then draw the 10% stratified SRS (fixed seed = 100) */
+data work.one;
+    set work.one;
+    call streaminit(100);
+    RNG = rand('Normal', 0, 1);
+run;
 
+proc sort data = work.one; by RNG;             run;
+proc sort data = work.one; by District_Number; run;
+
+proc surveyselect data = work.one
+                  out    = work.two
+                  samprate = 0.10
+                  method = srs
+                  seed   = 100
+                  stats;
+    strata District_Number;
+run;
+
+proc sort  data = work.two; by id; run;
+proc print data = work.two;         run;

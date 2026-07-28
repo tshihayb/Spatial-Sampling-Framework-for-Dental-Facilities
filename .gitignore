@@ -1,0 +1,24 @@
+# R session data / history
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+.Renviron
+
+# renv local library (keep renv.lock committed if you use renv)
+renv/library/
+renv/staging/
+renv/local/
+renv/cellar/
+
+# SAS work / logs
+*.sas7bdat
+*.log
+*.lst
+
+# OS / editor / office temp files
+.DS_Store
+Thumbs.db
+~$*.xlsx
+~$*.docx
+*.tmp

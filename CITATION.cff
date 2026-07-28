@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use these data or code, please cite both the article and this repository."
+title: "Spatial Sampling Framework for Dental Facilities — Riyadh"
+abstract: >-
+  Field-validated census data and R analysis code for a spatially explicit sampling
+  frame of private dental facilities in Riyadh, Saudi Arabia, supporting the manuscript
+  "Validating Dental Sampling Frames in Rapidly Expanding Cities: Riyadh Case."
+type: dataset
+authors:
+  - family-names: Alshihayb
+    given-names: Talal S.
+    orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: replace with real ORCID
+  - family-names: Aldossri
+    given-names: Musfer
+    orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: replace with real ORCID
+version: "1.0.0"
+date-released: "2026-07-28"                            # TODO: set to your release date
+license:
+  - MIT
+  - CC-BY-4.0
+url: "https://github.com/tshihayb/Spatial-Sampling-Framework-for-Dental-Facilities"
+repository-code: "https://github.com/tshihayb/Spatial-Sampling-Framework-for-Dental-Facilities"
+keywords:
+  - dental public health
+  - sampling frame
+  - spatial epidemiology
+  - health services research
+  - facility census
+  - geographic access
+  - Riyadh
+  - Saudi Arabia
+preferred-citation:
+  type: article
+  title: "Validating Dental Sampling Frames in Rapidly Expanding Cities: Riyadh Case"
+  authors:
+    - family-names: Alshihayb
+      given-names: Talal S.
+    - family-names: Aldossri
+      given-names: Musfer
+  journal: "JDR Clinical & Translational Research"
+  year: 2026
+  # doi: "10.xxxx/xxxxxx"                              # TODO: add DOI on acceptance
