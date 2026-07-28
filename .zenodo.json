@@ -1,0 +1,39 @@
+{
+  "title": "Spatial Sampling Framework for Dental Facilities — Riyadh",
+  "description": "Field-validated census data and R/SAS analysis code for a spatially explicit sampling frame of private dental facilities in Riyadh, Saudi Arabia, supporting the manuscript \"Validating Dental Sampling Frames in Rapidly Expanding Cities: Riyadh Case\" (JDR Clinical & Translational Research). Code is licensed under the MIT License; data under CC BY 4.0. District-level population is withheld under national census (GASTAT) governance; see the repository README for details.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "dental public health",
+    "sampling frame",
+    "spatial epidemiology",
+    "health services research",
+    "facility census",
+    "geographic access",
+    "Riyadh",
+    "Saudi Arabia"
+  ],
+  "creators": [
+    { "name": "Alshihayb, Talal S.", "orcid": "0000-0001-5750-4144" },
+    { "name": "Aldossri, Musfer" },
+    { "name": "Alasmary, Shatha Saad" },
+    { "name": "Alowayyid, Hajar Saleh" },
+    { "name": "Albassri, Dana Khalid" },
+    { "name": "Almasoudi, Fahad Khalid" },
+    { "name": "Alenazi, Bassam" },
+    { "name": "Najmi, Hatim Abdulaziz" },
+    { "name": "Aloraini, Turki K" },
+    { "name": "Alsudais, Alwaleed S" },
+    { "name": "Almojel, Saud" },
+    { "name": "AlGammlas, Mohammed Y" },
+    { "name": "Alem, Mohammed Fareed" },
+    { "name": "Albaiz, Abdullah M" },
+    { "name": "Alhelal, Faisal A" },
+    { "name": "Alghamdi, Rawaf Fouad" },
+    { "name": "Almanqur, Ahmed I" },
+    { "name": "Alrashed, Khalid W" },
+    { "name": "Halwani, Abdulaziz M" }
+  ]
+}
