@@ -12,6 +12,7 @@ type: dataset
 authors:
   - family-names: Alshihayb
     given-names: Talal S.
+    orcid: "https://orcid.org/0000-0001-5750-4144"
   - family-names: Aldossri
     given-names: Musfer
   - family-names: Alasmary
@@ -70,6 +71,7 @@ preferred-citation:
   authors:
     - family-names: Alshihayb
       given-names: Talal S.
+      orcid: "https://orcid.org/0000-0001-5750-4144"
     - family-names: Aldossri
       given-names: Musfer
     - family-names: Alasmary
