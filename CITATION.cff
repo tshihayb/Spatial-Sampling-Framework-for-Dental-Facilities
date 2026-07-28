@@ -6,15 +6,50 @@ abstract: >-
   frame of private dental facilities in Riyadh, Saudi Arabia, supporting the manuscript
   "Validating Dental Sampling Frames in Rapidly Expanding Cities: Riyadh Case."
 type: dataset
+# HOW TO ADD ORCIDs: under any author, add a line such as
+#   orcid: "https://orcid.org/0000-0002-1825-0097"
+# (use each author's real 16-digit ORCID; the field is optional and can be left off).
 authors:
   - family-names: Alshihayb
     given-names: Talal S.
-    orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: replace with real ORCID
   - family-names: Aldossri
     given-names: Musfer
-    orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: replace with real ORCID
+  - family-names: Alasmary
+    given-names: Shatha Saad
+  - family-names: Alowayyid
+    given-names: Hajar Saleh
+  - family-names: Albassri
+    given-names: Dana Khalid
+  - family-names: Almasoudi
+    given-names: Fahad Khalid
+  - family-names: Alenazi
+    given-names: Bassam
+  - family-names: Najmi
+    given-names: Hatim Abdulaziz
+  - family-names: Aloraini
+    given-names: Turki K
+  - family-names: Alsudais
+    given-names: Alwaleed S
+  - family-names: Almojel
+    given-names: Saud
+  - family-names: AlGammlas
+    given-names: Mohammed Y
+  - family-names: Alem
+    given-names: Mohammed Fareed
+  - family-names: Albaiz
+    given-names: Abdullah M
+  - family-names: Alhelal
+    given-names: Faisal A
+  - family-names: Alghamdi
+    given-names: Rawaf Fouad
+  - family-names: Almanqur
+    given-names: Ahmed I
+  - family-names: Alrashed
+    given-names: Khalid W
+  - family-names: Halwani
+    given-names: Abdulaziz M
 version: "1.0.0"
-date-released: "2026-07-28"                            # TODO: set to your release date
+date-released: "2026-07-28"                            # set to your release date
 license:
   - MIT
   - CC-BY-4.0
@@ -37,6 +72,41 @@ preferred-citation:
       given-names: Talal S.
     - family-names: Aldossri
       given-names: Musfer
+    - family-names: Alasmary
+      given-names: Shatha Saad
+    - family-names: Alowayyid
+      given-names: Hajar Saleh
+    - family-names: Albassri
+      given-names: Dana Khalid
+    - family-names: Almasoudi
+      given-names: Fahad Khalid
+    - family-names: Alenazi
+      given-names: Bassam
+    - family-names: Najmi
+      given-names: Hatim Abdulaziz
+    - family-names: Aloraini
+      given-names: Turki K
+    - family-names: Alsudais
+      given-names: Alwaleed S
+    - family-names: Almojel
+      given-names: Saud
+    - family-names: AlGammlas
+      given-names: Mohammed Y
+    - family-names: Alem
+      given-names: Mohammed Fareed
+    - family-names: Albaiz
+      given-names: Abdullah M
+    - family-names: Alhelal
+      given-names: Faisal A
+    - family-names: Alghamdi
+      given-names: Rawaf Fouad
+    - family-names: Almanqur
+      given-names: Ahmed I
+    - family-names: Alrashed
+      given-names: Khalid W
+    - family-names: Halwani
+      given-names: Abdulaziz M
   journal: "JDR Clinical & Translational Research"
   year: 2026
-  # doi: "10.xxxx/xxxxxx"                              # TODO: add DOI on acceptance
+  # On acceptance, add the article DOI here, e.g.:
+  #   doi: "10.1177/23800844xxxxxxxx"
