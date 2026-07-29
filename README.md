@@ -2,7 +2,7 @@
 
 [![Code license: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg)](LICENSE)
 [![Data license: CC BY 4.0](https://img.shields.io/badge/data%20license-CC%20BY%204.0-lightgrey.svg)](LICENSE-data.txt)
-[![DOI](https://img.shields.io/badge/DOI-pending%20Zenodo-orange.svg)](#how-to-cite)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21658240.svg)](https://doi.org/10.5281/zenodo.21658240)
 
 Data and analysis code for the study **“Validating Dental Sampling Frames in Rapidly
 Expanding Cities: Riyadh Case”** (JDR Clinical & Translational Research).
@@ -122,14 +122,16 @@ If you use these data or code, please cite both the software/dataset and the art
 Citation metadata is in [`CITATION.cff`](CITATION.cff); GitHub renders a “Cite this
 repository” button from it.
 
-> Alshihayb TS, Aldossri M. *Spatial Sampling Framework for Dental Facilities — Riyadh*
-> [data and code]. 2026. https://github.com/tshihayb/Spatial-Sampling-Framework-for-Dental-Facilities
+> Alshihayb TS, Aldossri M, Alasmary SS, et al. *Spatial Sampling Framework for Dental
+> Facilities — Riyadh* [data and code]. Zenodo; 2026. https://doi.org/10.5281/zenodo.21658240
 
 > Alshihayb TS, Aldossri M. *Validating Dental Sampling Frames in Rapidly Expanding
 > Cities: Riyadh Case.* JDR Clinical & Translational Research. 2026.
 
-A persistent DOI will be minted by archiving a tagged release to **Zenodo**; the DOI badge
-above will link to it once available.
+This repository is archived on **Zenodo** with a persistent DOI:
+**[10.5281/zenodo.21658240](https://doi.org/10.5281/zenodo.21658240)** — the *concept DOI*,
+which always resolves to the latest version. The current release (v1.0.1) is
+[10.5281/zenodo.21658241](https://doi.org/10.5281/zenodo.21658241).
 
 ---
 
